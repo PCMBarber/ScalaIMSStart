@@ -15,17 +15,17 @@ public class Utils {
 		scanner = new Scanner(System.in);
 	}
 
-	public Long getLong() {
-		Long longInput = null;
+	public int getInt() {
+		int intInput = -1;
 		do {
 			String input = getString();
 			try {
-				longInput = Long.parseLong(input);
+				intInput = Integer.parseInt(input);
 			} catch (NumberFormatException nfe) {
 				System.out.println("Error - Please enter a number");
 			}
-		} while (longInput == null);
-		return longInput;
+		} while (intInput == -1);
+		return intInput;
 	}
 
 	public String getString() {

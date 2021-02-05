@@ -1,9 +1,10 @@
 package com.qa
 package controllers
 
-trait CrudController[A] {
-  def readAll(): Seq[A]
-  def create(): A
-  def update(): A
-  def delete(): Int
+trait CrudController {
+  def readAll(): Unit
+  def readByID(): Unit
+  def create(): Unit
+  def update(): Unit
+  def delete(): Unit
 }
